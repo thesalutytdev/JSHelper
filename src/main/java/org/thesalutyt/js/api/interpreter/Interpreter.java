@@ -7,6 +7,7 @@ import org.thesalutyt.js.api.scope.Scope;
 import org.thesalutyt.js.api.scope.SimpleAsync;
 import org.thesalutyt.js.api.scope.SimpleEventManager;
 import org.thesalutyt.js.interfaces.Documentate;
+import org.thesalutyt.js.json.JSON;
 import org.thesalutyt.js.script.Script;
 
 import java.util.ArrayList;
@@ -29,6 +30,7 @@ public class Interpreter {
            scopes.add(new SimpleAsync());
            scopes.add(new SimpleEventManager());
            scopes.add(new Script(rootDir));
+           scopes.add(new JSON());
         });
     }
 
